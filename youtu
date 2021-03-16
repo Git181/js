@@ -6,5 +6,5 @@ youtube_ad = type=http-request,pattern=^https?:\/\/.+?\.googlevideo\.com\/.+&(oa
 [MITM]
 hostname = *.googlevideo.com
 ctier=[A-Z] url 302 ctier=A
-^https://[\s\S]*\.googlevideo\.com/.*&(oad|ctier) url reject-200, %APPEND% *.googlevideo.com
+^https://[\s\S]*\.googlevideo\.com/.*&(oad|ctier) url reject-200,%APPEND% *.googlevideo.com
 
